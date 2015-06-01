@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>MdN eReading-財團法人國語日報社</title>
+  <link rel="shortcut icon" href="../images/favicon.ico"> 
+  <!--CSS -->
+  <link href="../assets/bs3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <!--CSS -->
+  <link rel="stylesheet" href="http://203.77.6.36/mdnebook_css/css/animate.min.css" type="text/css">
+  <link rel="stylesheet" href="http://203.77.6.36/mdnebook_css/css/jquery.datetimepicker.css" rel="stylesheet" / >
+  <!--<link rel="stylesheet" type="text/css" href="http://203.77.6.36/mdnebook_css/css/non-responsive.css"/ >-->
+  <script type="text/javascript" src="http://203.77.6.36/mdnebook_css/js/jquery.js"></script>
+  </head>
+
+  <body id="page-top">
+    <!-- TOP BAR -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+      <div class="col-md-10 col-md-offset-1 topbar">
+         <div id="mdnlogo"class= "col-xs-6 col-sm-4" style="padding-top: 10px"><img class="img-responsive" src="../images/mdn-logo.png" width="200"></div>
+            <div id="elogo" class="col-xs-6 col-sm-4">
+            <a href="http://203.77.6.36/mdnebook_css/index.php/">
+            <img class="img-responsive" src="../images/e-logo.png"></a></div>
+          <div id="topbtn"class="col-xs-6 col-sm-4" style="padding-top:15px">
+
+            <a href="http://203.77.6.36/mdnebook_css/index.php/ebook/login" class="navbar-link">登入</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://203.77.6.36/mdnebook_css/index.php/ebook/register_rule" class="navbar-link">註冊</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+            <a href="#" class= "navbar-link">購物車&nbsp;<span class="badge">88</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" class="navbar-link">BoPoMo</a>
+
+            <!--網頁版語系5/25下階段再做
+            <div class="dropdown pull-right">
+              <button class="btn btn-default dropdown-toggle dropdown-menu-right" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                選擇語系
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">繁體中文</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">英文</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">日文</a></li>
+              </ul>
+            </div>-->
+          </div>
+        </div>
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <div class="col-md-10 col-md-offset-1 menubg">
+                <ul class="col-md-10 col-md-offset-2 nav navbar-nav">
+                    <li>
+                        <a class="page-scroll" href="http://203.77.6.36/mdnebook_css/index.php/ebook/category/000110">國語日報</a>
+                    </li>
+                        <li>
+                        <a class="page-scroll" data-toggle="dropdown" href="#">國語日報週刊<b class="caret"></b></a>
+                        <ul class="dropdown-menu" role="menu">
+                        <li><a href="http://203.77.6.36/mdnebook_css/index.php/ebook/category/000210">初階版</a></li>
+                        <li><a href="http://203.77.6.36/mdnebook_css/index.php/ebook/category/000220">進階版</a></li>
+                        </ul>
+                        </li>
+                    <li>
+                        <a class="page-scroll" href="http://203.77.6.36/mdnebook_css/index.php/ebook/category/000310">中學生報</a>
+                    </li>
+                    <li>
+                        <li>
+                        <a class="page-scroll" data-toggle="dropdown" href="#">雜誌圖書<b class="caret"></b></a>
+                        <ul class="dropdown-menu" role="menu">
+                        <li><a href="http://203.77.6.36/mdnebook_css/index.php/ebook/category/001098" class="page-scroll">小作家</a></li>
+                        <li><a href="http://203.77.6.36/mdnebook_css/index.php/ebook/category/000510" class="page-scroll">古今文選</a></li>
+                        <li><a href="http://203.77.6.36/mdnebook_css/index.php/ebook/category/000520" class="page-scroll">書和人</a></li>
+                        </ul>
+                        </li>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="http://203.77.6.36/mdnebook_css/index.php/ebook/category/001097">中文一學通</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#">Q&A</a>
+                    </li>
+                    <li id="m-login">
+                        <a class="page-scroll" href="http://203.77.6.36/mdnebook_css/index.php/ebook/login">登入 / 註冊</a>
+                    </li>
+                    <li id="m-bopomo">
+                        <a class="page-scroll" href="http://203.77.6.36/mdnebook_css/index.php/ebook/login">BoPoMo</a>
+                    </li>
+                    <!--這個是手機版語系5/25下階段再做
+                    <li id="m-language">
+                        <a class="page-scroll" data-toggle="dropdown" href="#">選擇語系<b class="caret"></b></a>
+                        <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">繁體中文</a></li>
+                        <li><a href="#">英文</a></li>
+                        <li><a href="#">日文</a></li>
+                        </ul>
+                    </li>-->
+                </ul>
+            </div>
+            </div>
+            <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <div class="mainbg">
+          <!-- 上半部-麵包屑-->
+          <div class="row">
+          <div class="col-md-10 col-md-offset-1">  
+          <div id="blank-hegiht"></div>
+          
+          <div class="breadcrumb">
+          <a href="http://203.77.6.36/mdnebook_css/index.php">首頁</a> > 
+          <a href="javascript:;"><strong>國語日報週刊( 初階版 )</strong></a>
+          </div>
+          <!-- 上半部-麵包屑END-->
+
+      <div class="col-md-4 col-md-offset-1 m-main-box">
+              <script>
+              $(document).ready(function(){
+                $('a#period_select').click(function(){
+                  var page = $(this).attr('data-period');
+                  $.ajax({
+                    url: 'http://203.77.6.36/mdnebook_css/index.php/ebook/getPeriodPage',
+                    type: 'GET',
+                    data: {
+                      level_id: 210,
+                      page: page,
+                      perPage: 30,
+                      count_page: 1                   },
+                    success:function(data){
+                      $('#period').html(data);
+                    },
+                  });
+                });
+                $('a#period_id').click(function(event){
+                  var periodID = $(this).attr('data-period');
+
+                  $.ajax({
+                    url: 'http://203.77.6.36/mdnebook_css/index.php/ebook/getPeriodImage',
+                    type: 'GET',
+                    data: {
+                      periodID: periodID
+                    },
+                    success:function(data){
+                      $('#books_images').html(data);
+                    }
+                  });
+                });
+              });
+            </script>
+
+            <!-- 上半部-期數內容table-->
+            <div id="tablepage">
+            <div class="table-responsive ">
+              <table id="period" class="table" >
+                <tbody>
+                <tr>
+                <td><a href="javascript:;" id="period_id" data-period="30">1012</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="31">1013</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="32">1014</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="33">1015</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="34">1016</a></td>
+                </tr>
+                <tr>
+                <td><a href="javascript:;" id="period_id" data-period="35">1017</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="36">1018</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="37">1019</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="38">1020</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="39">1021</a></td>
+                </tr>
+                <tr>
+                <td><a href="javascript:;" id="period_id" data-period="40">1022</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="41">1023</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="42">1024</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="43">1025</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="44">1026</a></td>
+                </tr>
+                <tr>
+                <td><a href="javascript:;" id="period_id" data-period="45">1027</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="46">1028</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="47">1029</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="48">1030</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="49">1031</a></td>
+                </tr>
+                <tr>
+                <td><a href="javascript:;" id="period_id" data-period="50">1032</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="51">1033</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="52">1034</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="53">1035</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="54">1036</a></td>
+                </tr>
+                <tr>
+                <td><a href="javascript:;" id="period_id" data-period="55">1037</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="56">1038</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="57">1039</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="58">1041</a></td>
+                <td><a href="javascript:;" id="period_id" data-period="59">1042</a></td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+          
+          
+          <!-- 期數內容分頁頁碼-->
+          <nav>
+          <ul class="pagination">
+          <li>
+          <a href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          </a>
+          </li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li>
+          <a href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          </a>
+          </li>
+          </ul>
+          </nav>
+          <!-- 期數內容分頁頁碼END-->
+          </div>
+          <!-- 上半部-期數內容END-->
+          
+          <div id="txt-box">
+          十二年國教開始，語文及寫作能力越來越重要。但閱讀力的養成要靠一點一滴的累積。
+          國語日報提供更多元化的知識，讓學童提升寫作能力，並有放眼全世界的能力。
+          </div>
+
+        <!--置入AddThis 分享社群 start-->
+        <div>
+          <img style="padding:10px 0 10px 0" src="../images/fb-icon-32.jpg">
+          <img src="../images/g-icon-32.jpg">
+          <img src="../images/tw-icon-32.jpg">
+          <img src="../images/this-icon-32.jpg">
+          <!--置入AddThis 分享社群 END-->
+          &nbsp;&nbsp;&nbsp;一年 <span class="sale-red-word">120</span>元
+        </div>
+        <!--訂閱btn-->
+        <div style="padding:0 15px 15px 0;float:left"><a href="#" class="btn btn-primary btn-xl" role="button">放入購物車</a></div>
+        <div style="padding:0 0 15px 0;float:left"><a href="#" class="btn btn-primary btn-xl" role="button">前往試閱</a></div>
+      </div>
+      
+          
+          <div id="books_images" class="col-md-4 m-main-box">
+          <a href="http://203.77.6.36/mdnebook_css/index.php/ebook/books/32?hits=true">
+          <img class="img-responsive blankbg" src ="../images/mdnweek-s-sample.jpg" width="300" /></a>
+          </div>
+      <!-- PC-AD -->
+      <div id="ad-150" class="col-md-2">
+        <a href="#"><img class="img-responsive ad-right-banner" src="../images/ad-150x100.jpg" width="150"></a>
+        <a href="#"><img class="img-responsive ad-right-banner" src="../images/ad-150x100.jpg" width="150"></a>
+        <a href="#"><img class="img-responsive ad-right-banner" src="../images/ad-150x100.jpg" width="150"></a>
+        <a href="#"><img class="img-responsive ad-right-banner" src="../images/ad-150x100.jpg" width="150"></a>
+      </div>
+      <!-- PC-AD-END-->
+    </div>
+    </div>
+    </div>
+<!-- 上半部內容end -->
+
+    <div class ="row">
+    <!-- Mobile-AD -->
+    <div id="m-ad-150" class="col-md-8 col-md-offset-2 m-main-box">
+        <a href="#"><img class="m-pic-ad-150" src="../images/ad-150x100.jpg" width="150"></a>
+        <a href="#"><img class="m-pic-ad-150" src="../images/ad-150x100.jpg" width="150"></a>
+        <a href="#"><img class="m-pic-ad-150" src="../images/ad-150x100.jpg" width="150"></a>
+        <a href="#"><img class="m-pic-ad-150" src="../images/ad-150x100.jpg" width="150"></a>
+      </div>
+    <!-- Mobile-AD-END --> 
+    <!-- AD-Other -->
+    <div id="pc-728-ad" class ="col-md-8 col-md-offset-2 m-main-box"><img class ="img-responsive" src="../images/ad-728x90.jpg"></div>
+    <div id="m-320-ad" class="col-md-8 col-md-offset-2 m-main-box" ><img class="img-responsive" src="../images/m-ad-320x50.jpg"></div>
+    <!-- AD-Other-END -->
+
+    <div class ="col-md-8 col-md-offset-2 m-main-box"> 
+    <img style="padding:0 0 15px 0"src="../images/new-title.png">
+    <div>
+    <a href="#"><img class="pic-list" src="../images/mdn-sample.jpg" width="160"></a>
+    <a href="#"><img class="pic-list" src="../images/mdn-sample.jpg" width="160"></a>
+    <a href="#"><img class="pic-list" src="../images/mdn-sample.jpg" width="160"></a>
+    <a href="#"><img class="pic-list" src="../images/mdn-sample.jpg" width="160"></a>
+    </div>
+    </div>
+    
+    </div>
+   </div>
+
+<!-- footer start -->
+       <div id="footer" class="footerbg footer-li">
+      <div class="container">
+      <div class="col-md-3 col-xs-4" style="padding-top: 20px"><img src="../images/footer-logo.png" >
+      <p></p>
+      <a href="#" class="btn btn-primary btn-xl"  role="button">建議或問題反映</a></div>
+      <div class="col-md-3 col-xs-2">
+          <h4>會員服務</h4>
+      <li><a href="#">個人首頁</a></li>
+      <li><a href="#">帳號設定</a></li>
+      <li><a href="#">忘記密碼</a></li>
+      </div>
+      <div class="col-md-3 col-xs-2">
+            <h4>關於我們</h4>
+      <li><a href="#">認識eReading</a></li>
+      <li><a href="#">Q&A</a></li>
+      <li><a href="#">服務條款</a></li>
+      <li><a href="#">隱私權政策</a></li>
+      </div>
+
+      <div class="col-md-3 col-xs-2">
+      <h4>出版刊物</h4>
+      <li><a href ="#">國語日報</a></li>
+      <li><a href ="#">國語日報週刊</a></li>
+      <li><a href ="#">中學生報</a></li>
+      <li><a href ="#">雜誌圖書</a></li>
+      </div>
+      </div>
+    </div>
+
+      <div id="footer-bottom" class="footer-2-bg">
+      <div class="col-md-6 col-xs-6 col-md-offset-3 ">財團法人國語日報社 版權所有 轉載必究 Copyright © Mandarin Daily News. All Rights Reserved.</div>
+      </div>
+    <!-- footer end -->
+
+
+<!-- Plugin JavaScript -->
+<script src="http://203.77.6.36/mdnebook_css/js/jquery.easing.min.js"></script>
+<script src="http://203.77.6.36/mdnebook_css/js/jquery.fittext.js"></script>
+<script src="http://203.77.6.36/mdnebook_css/js/wow.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="http://203.77.6.36/mdnebook_css/js/creative.js"></script>
+
+<script src="http://203.77.6.36/mdnebook_css/js/jquery.datetimepicker.js"></script>
+<!-- DATE CSS -->
+<script>/*
+window.onerror = function(errorMsg) {
+  $('#console').html($('#console').html()+'<br>'+errorMsg)
+}*/
+
+                  $('#datetimepicker3').datetimepicker({
+                      timepicker:false,
+                      format:'Y-m-d',
+                      inline:true,
+                        onChangeDateTime:function(dp,$input){
+
+                          var date = $input.val();
+                          $.ajax({
+                            url: 'http://203.77.6.36/mdnebook_css/index.php/ebook/getPeriodImage',
+                            type: 'GET',
+                            data: {
+                              date: date
+                            },
+                            success:function(data){
+                              $('#books_images').html(data);
+
+                            },
+                            error:function(data){
+                              alert('error');
+                            }
+                          });
+                        }
+                  });
+</script>
+<div id="footer">
+ <div class="box_960">
+</div>
+</div>
+
+
+<!-- bootstrap 3 -->
+<script src="http://203.77.6.36/mdnebook_css/assets/bs3/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="http://203.77.6.36/mdnebook_css/js/jquery.easing.min.js"></script>
+<script src="http://203.77.6.36/mdnebook_css/js/jquery.fittext.js"></script>
+<script src="http://203.77.6.36/mdnebook_css/js/wow.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="http://203.77.6.36/mdnebook_css/js/creative.js"></script>
+
+
+<script src="http://203.77.6.36/mdnebook_css/js/jquery.datetimepicker.js"></script>  </body>
+</html>

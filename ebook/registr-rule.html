@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>MdN eReading-財團法人國語日報社</title>
+  <link rel="shortcut icon" href="../images/favicon.ico"> 
+  <!--CSS -->
+  <link href="../assets/bs3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <!--CSS -->
+  <link rel="stylesheet" href="http://203.77.6.36/mdnebook_css/css/animate.min.css" type="text/css">
+  <link rel="stylesheet" href="http://203.77.6.36/mdnebook_css/css/jquery.datetimepicker.css" rel="stylesheet" / >
+  <!--<link rel="stylesheet" type="text/css" href="http://203.77.6.36/mdnebook_css/css/non-responsive.css"/ >-->
+  <script type="text/javascript" src="http://203.77.6.36/mdnebook_css/js/jquery.js"></script>
+  </head>
+
+  <body id="page-top">
+    <!-- TOP BAR -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+      <div class="col-md-10 col-md-offset-1 topbar">
+         <div id="mdnlogo"class= "col-xs-6 col-sm-4" style="padding-top: 10px"><img class="img-responsive" src="../images/mdn-logo.png" width="200"></div>
+            <div id="elogo" class="col-xs-6 col-sm-4">
+            <a href="http://203.77.6.36/mdnebook_css/index.php/">
+            <img class="img-responsive" src="../images/e-logo.png"></a></div>
+          <div id="topbtn"class="col-xs-6 col-sm-4" style="padding-top:15px">
+
+            <a href="http://203.77.6.36/mdnebook_css/index.php/ebook/login" class="navbar-link">登入</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://203.77.6.36/mdnebook_css/index.php/ebook/register_rule" class="navbar-link">註冊</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+            <a href="#" class= "navbar-link">購物車&nbsp;<span class="badge">88</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" class="navbar-link">BoPoMo</a>
+
+            <!--網頁版語系5/25下階段再做
+            <div class="dropdown pull-right">
+              <button class="btn btn-default dropdown-toggle dropdown-menu-right" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                選擇語系
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">繁體中文</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">英文</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">日文</a></li>
+              </ul>
+            </div>-->
+          </div>
+        </div>
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <div class="col-md-10 col-md-offset-1 menubg">
+                <ul class="col-md-10 col-md-offset-2 nav navbar-nav">
+                    <li>
+                        <a class="page-scroll" href="http://203.77.6.36/mdnebook_css/index.php/ebook/category/000110">國語日報</a>
+                    </li>
+                        <li>
+                        <a class="page-scroll" data-toggle="dropdown" href="#">國語日報週刊<b class="caret"></b></a>
+                        <ul class="dropdown-menu" role="menu">
+                        <li><a href="http://203.77.6.36/mdnebook_css/index.php/ebook/category/000210">初階版</a></li>
+                        <li><a href="http://203.77.6.36/mdnebook_css/index.php/ebook/category/000220">進階版</a></li>
+                        </ul>
+                        </li>
+                    <li>
+                        <a class="page-scroll" href="http://203.77.6.36/mdnebook_css/index.php/ebook/category/000310">中學生報</a>
+                    </li>
+                    <li>
+                        <li>
+                        <a class="page-scroll" data-toggle="dropdown" href="#">雜誌圖書<b class="caret"></b></a>
+                        <ul class="dropdown-menu" role="menu">
+                        <li><a href="http://203.77.6.36/mdnebook_css/index.php/ebook/category/001098" class="page-scroll">小作家</a></li>
+                        <li><a href="http://203.77.6.36/mdnebook_css/index.php/ebook/category/000510" class="page-scroll">古今文選</a></li>
+                        <li><a href="http://203.77.6.36/mdnebook_css/index.php/ebook/category/000520" class="page-scroll">書和人</a></li>
+                        </ul>
+                        </li>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="http://203.77.6.36/mdnebook_css/index.php/ebook/category/001097">中文一學通</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#">Q&A</a>
+                    </li>
+                    <li id="m-login">
+                        <a class="page-scroll" href="http://203.77.6.36/mdnebook_css/index.php/ebook/login">登入 / 註冊</a>
+                    </li>
+                    <li id="m-bopomo">
+                        <a class="page-scroll" href="http://203.77.6.36/mdnebook_css/index.php/ebook/login">BoPoMo</a>
+                    </li>
+                    <!--這個是手機版語系5/25下階段再做
+                    <li id="m-language">
+                        <a class="page-scroll" data-toggle="dropdown" href="#">選擇語系<b class="caret"></b></a>
+                        <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">繁體中文</a></li>
+                        <li><a href="#">英文</a></li>
+                        <li><a href="#">日文</a></li>
+                        </ul>
+                    </li>-->
+                </ul>
+            </div>
+            </div>
+            <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+          <div class="mainbg">
+          <div class="row">
+          <div class="col-md-10 col-md-offset-1">  
+          <div id="blank-hegiht"></div>
+
+          <!-- 上半部-麵包屑-->
+          <div class="breadcrumb">
+          <a href="http://203.77.6.36/mdnebook_css/index.php">首頁</a> > 
+          <a href="javascript:;"><strong>會員權益</a></strong></div>
+          <!-- 上半部-麵包屑END-->
+
+            <div class="row">
+            <div id="main-txt" class="col-md-8 col-md-offset-2 blankbg-main">
+            <h3 class="col-md-3 col-md-offset-5 color-title">會員權益</h3>
+            <div class="col-md-10 col-md-offset-1">
+            <p class="color-title">為保障您的權益，在成為國語日報社網站會員前，請先詳細閱讀本同意書所有內容，並同意遵守以下所有會員規範。說明如下︰</p>
+            1、在成為國語日報社網站會員前，您必須先登錄個人基本資料，且不得以第三人之名義註冊為會員。請於登錄時填寫正確資料，包括真實姓名、地址、電子信箱等基本資料，若個人資料填寫不實，或原登錄資料已不符真實而未更新者，本網站有權保留或終止該會員之資格。<br>
+            2、您於註冊時須自行設定一組專用的帳號及密碼，會員應妥善保管使用者帳號與密碼，並為進入本網站後從事之一切活動負責，禁止從事違反法律規定之行為。<br>
+            3、本網站蒐集、使用、保存會員之個人資料，皆依個人資料保護法規定。 <br>
+            蒐集目的：<br>
+            蒐集目的在於進行業務行銷、客戶管理與服務、網路購物、其他電子商務服務與調查、統計與研究分析。
+            <br>本網站將藉由加入會員之過程或進行交易之過程來蒐集個人資料，資料包括︰<br>
+            (1)個人辨識：如會員之姓名、生日、性別、地址、電話、電子郵件等資訊。<br>
+            (2)財務辨識：如信用卡或金融機構帳戶資訊。<br>
+            使用期間及方式：<br>
+            (1)期間：會員當事人要求停止使用或本網站停止提供服務之日為止。<br>
+            (2)方式：會員之個人資料用於本網站之會員管理、客戶管理、身份辨識、金流服務、EDM等。<br>
+            (3)會員的隱私權，本網站絕對尊重並予以保護。本網站對會員資料詳加保密，不對外公開會員之姓名、地址、電子信箱等內容，絕不會出售、交換或出租任何會員個人資料給其他團體或個人。<br>
+            (4)為了提供其他服務或會員權益，需要與提供該服務或優惠之第三者蒐集、共用會員的資料時，本網站會在活動時提供充分說明，並在資料蒐集之前通知會員，會員可以自由選擇是否接受這項特定服務或優惠。<br>
+            4、本網站並未完全審閱連結於網站之外來網址內容，對於此類外來連結網頁與網站所載內容並不承擔任何責任。<br>
+            5、若您欲引用或轉載本網站上局部或全部的內容，請必須取得本站的事前書面同意。<br>
+            6、會員同意本網站得基於維護交易安全等任何理由(包含缺乏使用)<br>，終止或移除會員的密碼、帳號或任何服務之使用，並對會員或任何第三人均不承擔責任。<br>
+            7、在下列情況之下，本網站有權暫停、中斷或拒絕提供本服務的全部或部份，且不負事先通知的義務，本網站對使用者任何直接或間接的損害，均不負任何賠償或補償的義務：<br>
+            (1)對本服務相關軟硬體設備進行搬遷、更換、升級、保養或維修時。<br>
+            (2)使用者有任何違反政府法令或本同意書的情形。<br>
+            (3)天災或其他不可抗力因素所導致的服務停止或中斷。<br>
+            (4)其他不可歸責於本網站事由所致的服務停止或中斷。<br>
+            (5)非本網站所得控制的事由而致服務資訊顯示不正確、或遭偽造、竄改、刪除或擷取、或致系統中斷或不能正常運作時。<br>
+            
+            (6)其他本網站認為有需要停止或中斷服務的情形。<br>
+            
+            8、本網站針對可預知的軟硬體維護計畫，有可能導致系統中斷或是暫停時，將盡可能於該狀況發生前，以適當方式於本網站公告。<br>
+            
+            9、本網站僅是依提供服務當時的既有項目、功能及現狀提供您使用，本網站並不負任何的擔保、保證或損害賠償責任。<br>
+            <div id="btn-list" class="col-md-8 col-md-offset-3">
+            <div style="padding:0 15px 15px 0;float:left"><a href="#" class="btn btn-primary btn-xl" role="button">不同意</a></div>
+            <div style="padding:0 0 15px 0;float:left"><a href="#" class="btn btn-primary-2 btn-xl" role="button">同意</a></div>
+            </div>
+          </div>
+
+            
+          </div>
+          </div>
+          </div>          
+          </div>    
+          </div>
+          
+
+  <div class ="row">
+  <!-- Mobile-AD -->
+    <div id="m-ad-150" class="col-md-8 col-md-offset-2 m-main-box">
+        <a href="#"><img class="m-pic-ad-150" src="../images/ad-150x100.jpg" width="150"></a>
+        <a href="#"><img class="m-pic-ad-150" src="../images/ad-150x100.jpg" width="150"></a>
+        <a href="#"><img class="m-pic-ad-150" src="../images/ad-150x100.jpg" width="150"></a>
+        <a href="#"><img class="m-pic-ad-150" src="../images/ad-150x100.jpg" width="150"></a>
+      </div>
+    <!-- Mobile-AD-END --> 
+
+    <!-- AD-Other -->
+    <div id="pc-728-ad" class ="col-md-8 col-md-offset-2 m-main-box"><img class ="img-responsive" src="../images/ad-728x90.jpg"></div>
+    <div id="m-320-ad" class="col-md-8 col-md-offset-2 m-main-box" ><img class="img-responsive" src="../images/m-ad-320x50.jpg"></div>
+    <!-- AD-Other-END -->
+    <div class ="col-md-8 col-md-offset-2 m-main-box"> 
+    <img style="padding:0 0 15px 0"src="../images/new-title.png">
+    <div>
+    <a href="#"><img class="pic-list" src="../images/mdn-sample.jpg" width="160"></a>
+    <a href="#"><img class="pic-list" src="../images/mdn-sample.jpg" width="160"></a>
+    <a href="#"><img class="pic-list" src="../images/mdn-sample.jpg" width="160"></a>
+    <a href="#"><img class="pic-list" src="../images/mdn-sample.jpg" width="160"></a>
+    </div>
+    </div>
+  </div>
+
+              <!-- footer start -->
+   <div id="footer" class="footerbg footer-li">
+      <div class="container-fluid">
+      <div class="col-md-3" style="padding-top: 2%"><img src="../images/footer-logo.png" >
+      <p></p>
+      <a href="#" class="btn btn-primary btn-xl"  role="button">建議或問題反映</a></div>
+      <div id="fotter-1" class="col-md-2">
+      <h4>會員服務</h4>
+      <li><a href="#">個人首頁</a></li>
+      <li><a href="#">帳號設定</a></li>
+      <li><a href="#">忘記密碼</a></li>
+      </div>
+      <div id="fotter-2" class="col-md-2">
+      <h4>關於我們</h4>
+      <li><a href="#">認識eReading</a></li>
+      <li><a href="#">Q&A</a></li>
+      <li><a href="#">服務條款</a></li>
+      <li><a href="#">隱私權政策</a></li>
+      </div>
+
+      <div id="fotter-3" class="col-md-2">
+      <h4>出版刊物</h4>
+      <li><a href ="#">國語日報</a></li>
+      <li><a href ="#">國語日報週刊</a></li>
+      <li><a href ="#">中學生報</a></li>
+      <li><a href ="#">雜誌圖書</a></li>
+      </div> 
+
+      <div id="fotter-4" class="col-md-2">
+      <h4>學習資源</h4>
+      <li><a href ="#">BoPoMo</a></li>
+      </div> 
+      
+
+      </div>
+    </div>
+
+
+      <div id="footer-bottom" class="footer-2-bg">
+      <div class="row">
+      <div class="col-md-6 col-md-offset-3 ">財團法人國語日報社 版權所有 轉載必究Copyright © Mandarin Daily News. All Rights Reserved.</div>
+      </div>
+      </div> 
+    <!-- footer end -->
+
+<!-- DATE CSS -->
+
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bs3/js/bootstrap.min.js"></script>
+  </body>
+</html>
